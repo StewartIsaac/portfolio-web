@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      href="https://i.postimg.cc/DyFnK242/IMG-20240311-081041.jpg"
+      type="image/x-icon"
+      style="border-radius: 100%"
+    />
+    <link
+      rel="icon"
+      href="https://i.postimg.cc/DyFnK242/IMG-20240311-081041.jpg"
+      type="image/x-icon"
+      style="border-radius: 100%"
+    />
+    <title>Gabriel Isaac | Frontend Web Developer</title>
+    <meta
+      name="description"
+      content="A Frontend Web Developer, creating stunning, user-friendly websites with HTML, CSS, JavaScript, React.js, and Tailwind CSS. Explore my portfolio to see my latest projects."
+    />
+    <meta name="author" content="Gabriel Isaac" />
+    <meta property="og:site_name" content="Gabriel Isaac | Portfolio Website" />
+    <meta property="og:url" content="https://gabriel.vercel.com/" />
+    <meta
+      property="og:description"
+      content="A Frontend Web Developer, creating stunning, user-friendly websites with HTML, CSS, JavaScript, React.js, and Tailwind CSS. Explore my portfolio to see my latest projects."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/C8Wnkrt/pretty-snap-2022-3-29-16-11.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="https://i.postimg.cc/DyFnK242/IMG-20240311-081041.jpg"
+              alt="Gabriel Isaac Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Gabriel Isaac</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#projects" class="header__link"> Projects </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./#contact" class="header__link"> Contact </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="hero"></div>
+      <div class="home-hero__content">
+        <h1 class="heading-primary">
+          Hi There!<br />
+          I'm Gabriel Isaac
+        </h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            A Front-End Web Developer building dynamic and user-friendly web
+            experiences
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./#projects" class="btn btn--bg">Projects</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a
+            href="https://linkedin.com/in/stewartisaac"
+            class="home-hero__social-icon-link"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="./assets/svg/linkedin-dark.svg"
+              alt="Gabriel Isaac Linkedin Profile"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://github.com/StewartIsaac"
+            class="home-hero__social-icon-link"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="./assets/svg/github-dark.svg"
+              alt="Gabriel Isaac Github Profile"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="https://twitter.com/stewartisaacg"
+            class="home-hero__social-icon-link"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              src="./assets/svg/twitter-dark.svg"
+              alt="Gabriel Isaac Github Profile"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            Here you will find more information about me, what I do, and my
+            current skills mostly in terms of web development
+          </span>
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                I'm a passionate
+                <strong>Front-End Web Developer</strong> skilled in crafting
+                responsive, user-centric web applications using HTML, CSS,
+                JavaScript, React.js, and Tailwind CSS. Currently, I'm expanding
+                my skillset to include backend development through the rigorous
+                <strong>ALX Software Engineering Program.</strong>
+              </p>
+              <p class="about__content-details-para">
+                With over two years of experience as a freelance graphic
+                designer, I bring a keen eye for visual design to my web
+                development projects.
+              </p>
+              <p class="about__content-details-para">
+                I'm committed to delivering high-quality web experiences that
+                blend technical expertise with creative flair. Feel free to
+                Connect with me me on
+                <a
+                  rel="noreferrer"
+                  href="https://linkedin.com/in/stewartisaac"
+                  target="_blank"
+                  >Linkedin</a
+                >
+              </p>
+              <p class="about__content-details-para">
+                I'm open to <strong>Job</strong> opportunities where I can
+                contribute, learn and grow. If you have a good opportunity that
+                matches my skills and experience then don't hesitate to
+                <strong>contact</strong> me.
+              </p>
+            </div>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">React</div>
+              <div class="skills__skill">Tailwind CSS</div>
+              <div class="skills__skill">Webflow</div>
+              <div class="skills__skill">Node.js</div>
+              <div class="skills__skill">Express.js</div>
+              <div class="skills__skill">MongoDB</div>
+              <div class="skills__skill">MySQL</div>
+              <div class="skills__skill">GIT</div>
+              <div class="skills__skill">Github</div>
+              <div class="skills__skill">Bash</div>
+              <div class="skills__skill">Responsive Web Design</div>
+              <div class="skills__skill">User-centered Design</div>
+              <div class="skills__skill">API Development</div>
+              <div class="skills__skill">API Integration</div>
+              <div class="skills__skill">Photoshop</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            Here you will find some of the projects I created
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/bookwave.png"
+                alt="Project Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">The BookWave</h3>
+              <p class="projects__row-content-desc">
+                Bookwave is a responsive book library app that allows users to
+                search for, view detailed information about, and save their
+                favorite books using the Google Books API. I built this web app
+                with React + Vite and Tailwind CSS.
+              </p>
+              <a
+                class="btn btn--med btn--theme dynamicBgClr"
+                href="https://thebookwave.vercel.app"
+                target="_blank"
+                >Visit</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/weathermo.png"
+                alt="Project Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Weather Motion</h3>
+              <p class="projects__row-content-desc">
+                Still under development, Weather Motion is an experimental app
+                that consumes the OpenWeather Map API and provides users with
+                real-time weather data. This app is built to honour friendships.
+                No matter the storm, true friends stick around even when no one
+                else would!
+              </p>
+              <a
+                class="btn btn--med btn--theme dynamicBgClr"
+                href="/project-2"
+                target="_blank"
+                >Visit</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/gif/joggen.gif"
+                alt="Project Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Joggen Realty</h3>
+              <p class="projects__row-content-desc">
+                This is a real estate website I built with the power of webflow
+                and later translated into HTML, CSS and Javascript.
+              </p>
+              <a
+                class="btn btn--med btn--theme dynamicBgClr"
+                href="https://joggens.webflow.io"
+                target="_blank"
+                >Visit</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/png/dyna-quo-gen.png"
+                alt="Project Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">
+                Dynamic Quote Generator
+              </h3>
+              <p class="projects__row-content-desc">
+                Dynamic Quote Generator is a simple web app that generates
+                quotes from a database. It utilises Local Storage to save quotes
+                on the users local machine temporarily for easy retrieval.
+              </p>
+              <a
+                class="btn btn--med btn--theme dynamicBgClr"
+                href="/project-4"
+                target="_blank"
+                >View</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Feel free to Contact me by submitting the form below and I will get
+            back to you as soon as possible
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form" method="post">
+            <input type="hidden" name="form-name" value="form 1" />
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="email"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://linkedin.com/in/stewartisaac"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="Gabriel Isaac Linkedin Profile"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://github.com/StewartIsaac"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="Gabriel Isaac Github Profile"
+                />
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://twitter.com/stewartisaacg"
+              >
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="Gabriel Isaac Twitter Profile"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h2 class="heading heading-sm text-lt">Gabriel Isaac</h2>
+            <p class="main-footer__short-desc">
+              a Front-End Web Developer building dynamic <br />and user-friendly
+              web experiences
+            </p>
+          </div>
+        </div>
+        <div class="main-footer__lower">
+          &copy; Copyright
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          -
+          <a rel="noreferrer" href="./">Gabriel Isaac</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
