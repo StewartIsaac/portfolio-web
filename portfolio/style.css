@@ -220,6 +220,13 @@ textarea {
   padding: calc(1.5rem - 2px) calc(5rem - 2px)
 }
 
+.about--click {
+  margin-right: 10px;
+  border-radius: 8px;
+  position: relative;
+  padding: 1.5rem 4rem;
+}
+
 .sec-pad {
   padding: 12rem 0
 }
