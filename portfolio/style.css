@@ -7,6 +7,14 @@
   font-family: inherit
 }
 
+:root {
+  font-family: Inter, sans-serif;
+
+  --stripe-color: #fff;
+  --bg: var(--stripe-color);
+  --maincolor: var(--bg);
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth
@@ -723,8 +731,8 @@ textarea {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.226);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.986);
+  box-shadow: 0 4px 30px rgba(37, 37, 37, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
@@ -1016,15 +1024,6 @@ textarea {
   }
 }
 
-/*base*/
-:root {
-  font-family: Inter, sans-serif;
-
-  --stripe-color: #fff;
-  --bg: var(--stripe-color);
-  --maincolor: var(--bg);
-}
-
 @keyframes smoothBg {
   from {
     background-position: 50% 50%, 50% 50%;
@@ -1063,6 +1062,7 @@ textarea {
   filter: blur(10px) invert(100%);
 
   mask-image: radial-gradient(ellipse at 100% 0%, black 40%, transparent 70%);
+  z-index: 2;
 
   &::after {
     content: "";
@@ -1073,6 +1073,7 @@ textarea {
     animation: smoothBg 60s linear infinite;
     background-attachment: fixed;
     mix-blend-mode: difference;
+    z-index: 3;
   }
 }
 
