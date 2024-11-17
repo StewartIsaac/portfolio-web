@@ -53,29 +53,6 @@
         });
       })();
     </script>
-    <script type="text/javascript">
-      window.onload = function () {
-        document
-          .getElementById('contact-form')
-          .addEventListener('submit', function (event) {
-            event.preventDefault();
-            emailjs
-              .sendForm(
-                'Portfolio Website',
-                'template_p4za2tj',
-                '#contact-form'
-              )
-              .then(
-                () => {
-                  console.log('SUCCESS!');
-                },
-                (error) => {
-                  console.log('FAILED...', error);
-                }
-              );
-          });
-      };
-    </script>
   </head>
   <body>
     <!-- Header -->
@@ -401,7 +378,7 @@
                 class="btn btn--med btn--theme dynamicBgClr"
                 href="/project-4"
                 target="_blank"
-                >View</a
+                >Visit</a
               >
             </div>
           </div>
@@ -461,6 +438,15 @@
               Submit
             </button>
           </form>
+          <div id="form-overlay" class="form-overlay hidden">
+            <div class="form-overlay-content">
+              <div id="overlay-icon" class="overlay-icon"></div>
+              <p id="overlay-message" class="overlay-message">
+                Success! Your message has been sent.
+              </p>
+              <button id="close-overlay" class="close-overlay">Go Back</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -1083,3 +1083,80 @@ textarea {
 :has(:checked) .hero::after {
   filter: blur(10px) opacity(50%) saturate(200%);
 }
+
+.form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-overlay-content {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3); */
+  color: rgb(0, 0, 0);
+  padding: 4rem;
+}
+
+.overlay-icon {
+  margin: 0 auto 1rem;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#overlay-icon {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.overlay-message {
+  font-size: 1.7rem;
+  margin: 1rem 0;
+  max-width: 30rem;
+  color: #666;
+}
+
+.close-overlay {
+  margin-top: 10px;
+  background-color: #5f00f7;
+  padding: 1.3rem 4rem;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  color: white;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.close-overlay:hover {
+  transform: translateY(-3px);
+}
