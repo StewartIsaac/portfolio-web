@@ -1005,7 +1005,7 @@ textarea {
   color: #666
 }
 
-/* ------ Background ------- */
+/* ------ Gradient Background ------- */
 @property --blink-opacity {
   syntax: "<number>";
   inherits: false;
@@ -1062,7 +1062,6 @@ textarea {
   filter: blur(10px) invert(100%);
 
   mask-image: radial-gradient(ellipse at 100% 0%, black 40%, transparent 70%);
-  z-index: 2;
 
   &::after {
     content: "";
@@ -1073,7 +1072,12 @@ textarea {
     animation: smoothBg 60s linear infinite;
     background-attachment: fixed;
     mix-blend-mode: difference;
-    z-index: 3;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .hero {
+    position: absolute;
   }
 }
 
