@@ -133,7 +133,7 @@ textarea {
 
 .heading-sec__main--lt::after {
   content: '';
-  background: #5f00f7 !important;
+  background: #7d00c5 !important;
 }
 
 .heading-sec__main::after {
@@ -142,7 +142,7 @@ textarea {
   top: calc(100% + 1.5rem);
   height: 5px;
   width: 3rem;
-  background: #5f00f7;
+  background: #7d00c5;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px
@@ -188,7 +188,7 @@ textarea {
 }
 
 .btn {
-  background: #5f00f7;
+  background: #7d00c5;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -216,13 +216,13 @@ textarea {
 }
 
 .btn--theme {
-  background: #5f00f7;
+  background: #7d00c5;
   color: #fff;
 }
 
 .btn--theme-inv {
   color: #111;
-  background: #5f00f7;
+  background: #7d00c5;
   border: 2px solid #111;
   box-shadow: none;
   padding: calc(1.5rem - 2px) calc(5rem - 2px)
@@ -395,7 +395,7 @@ textarea {
 .about__content-details-para a {
   text-decoration: underline;
   font-weight: 700;
-  color: #5f00f7;
+  color: #7d00c5;
   margin: 0 3px;
 }
 
@@ -763,18 +763,17 @@ textarea {
 }
 
 .header__logo-img-cont {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50px;
+  width: 4rem;
+  height: 4rem;
   overflow: hidden;
-  margin-right: 1rem;
+  margin-right: 2rem;
   background: #fff;
 }
 
 @media only screen and (max-width: 56.25em) {
   .header__logo-img-cont {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 3.8rem;
+    height: 3.8rem;
     margin-right: 1.2rem
   }
 }
@@ -786,14 +785,34 @@ textarea {
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
-  display: block
+  display: block;
+  transition: transform 0.5s ease-in-out;
+}
+
+.header__logo-img:hover {
+  transform: scale(1.02);
+  animation: sparkle 1.5s infinite;
+}
+
+@keyframes sparkle {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .header__logo-sub {
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 1px
+  letter-spacing: 1px;
 }
 
 .header__links {
@@ -1147,7 +1166,7 @@ textarea {
 
 .close-overlay {
   margin-top: 10px;
-  background-color: #5f00f7;
+  background-color: #7d00c5;
   padding: 1.3rem 4rem;
   border-radius: 5px;
   font-size: 1.7rem;
